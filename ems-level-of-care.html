@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta
+            content="Interactive interfacility transport level-of-care decision tool for transfer planning."
+            name="description"
+        />
+        <title>Interfacility Transfers | Superior Ambulance Service</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="wrap">
+                <span>Serving the Southern Tier since 1964</span>
+                <strong class="emergency-notice">
+                    FOR EMERGENCIES, CALL
+                    <a href="tel:911">911</a>
+                </strong>
+                <a class="top-phone" href="tel:+16077721456">Office: (607) 772-1456</a>
+            </div>
+        </div>
+        <header class="site-header">
+            <div class="wrap header-inner">
+                <a aria-label="Superior Ambulance Service home" class="brand" href="index.html">
+                    <img alt="Superior Ambulance" class="brand-logo" height="80" src="logo.jpg" width="167" />
+                </a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a class="" href="services.html">Services</a>
+                    <a aria-current="page" class="active" href="ems-level-of-care.html">Transfers</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a
+                        href="https://www.facebook.com/superior.ny.ems/photos_stream?tab=photos_albums"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        Photos
+                    </a>
+                    <a href="links.html">Links</a>
+                    <a href="employment.html">Employment</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="page-banner">
+                <div class="wrap">
+                    <h1>Level of Care Decision Tool</h1>
+                </div>
+            </section>
+            <div class="wrap transfer-layout">
+                <div class="transfer-intro">
+                    This guide follows the provided transfer triage flow. Confirm the appropriate crew and clinical
+                    requirements with dispatch before finalizing transport.
+                </div>
+                <i class="t" id="q1"></i>
+                <i class="t" id="q2"></i>
+                <i class="t" id="q3"></i>
+                <i class="t" id="q4"></i>
+                <i class="t" id="q5"></i>
+                <i class="t" id="q6"></i>
+                <i class="t" id="r1"></i>
+                <i class="t" id="r2"></i>
+                <i class="t" id="r3"></i>
+                <i class="t" id="r4"></i>
+                <i class="t" id="r5"></i>
+                <i class="t" id="r6"></i>
+                <i class="t" id="r7"></i>
+                <section aria-label="Level of care questions" class="transfer-card">
+                    <div class="panel" id="p1">
+                        <p class="step mono">Question 1 of 6</p>
+                        <p class="q">
+                            Does the patient require treatments outside the EMS provider's scope or training?
+                        </p>
+                        
+                        <div class="actions">
+                            <a class="transfer-btn" href="#r1">Yes</a>
+                            <a class="transfer-btn" href="#q2">No</a>
+                            <span class="gap"></span>
+                            <span class="transfer-btn off">Back</span>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                        <details class="transfer-details">
+                            <summary>Additional information</summary>
+                            <div class="transfer-details-content">
+                                <ul>
+                                    <li>Item</li>
+                                    <li>Item</li>
+                                    <li>Item</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="panel" id="p2">
+                        <p class="step mono">Question 2 of 6</p>
+                        <p class="q">Are blood products initiated and running?</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#r2">Yes</a>
+                            <a class="transfer-btn" href="#q3">No</a>
+                            <span class="gap"></span>
+                            <a class="transfer-btn" href="#q1">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="p3">
+                        <p class="step mono">Question 3 of 6</p>
+                        <p class="q">Is continuous cardiac monitoring required?</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#r3">Yes</a>
+                            <a class="transfer-btn" href="#q4">No</a>
+                            <span class="gap"></span>
+                            <a class="transfer-btn" href="#q2">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="p4">
+                        <p class="step mono">Question 4 of 6</p>
+                        <p class="q">Are standard IV infusions (drips, medications) running?</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#r4">Yes</a>
+                            <a class="transfer-btn" href="#q5">No</a>
+                            <span class="gap"></span>
+                            <a class="transfer-btn" href="#q3">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="p5">
+                        <p class="step mono">Question 5 of 6</p>
+                        <p class="q">
+                            Are there simple IV fluids (D5W, Normal Saline, Lactated Ringers) with NO medications?
+                        </p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#r5">Yes</a>
+                            <a class="transfer-btn" href="#q6">No</a>
+                            <span class="gap"></span>
+                            <a class="transfer-btn" href="#q4">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="p6">
+                        <p class="step mono">Question 6 of 6</p>
+                        <p class="q">Is there a secured saline lock only (no fluids or medications)?</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#r6">Yes</a>
+                            <a class="transfer-btn" href="#r7">No</a>
+                            <span class="gap"></span>
+                            <a class="transfer-btn" href="#q5">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="pr1">
+                        <p class="step mono">Result</p>
+                        <p class="result">Hospital Staff Accompaniment Required</p>
+                        <p class="note">Treatment is outside the EMS provider's scope or training.</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#q1">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="pr2">
+                        <p class="step mono">Result</p>
+                        <p class="result">Hospital Staff Accompaniment Required</p>
+                        <p class="note">Blood products are initiated and running.</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#q2">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="pr3">
+                        <p class="step mono">Result</p>
+                        <p class="result">Critical Care (CC) or Paramedic Required</p>
+                        <p class="note">Continuous cardiac monitoring is required.</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#q3">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="pr4">
+                        <p class="step mono">Result</p>
+                        <p class="result">Critical Care (CC) or Paramedic Required</p>
+                        <p class="note">Standard IV infusions (drips, medications) are running.</p>
+                       
+                        <div class="actions">
+                            <a class="transfer-btn" href="#q4">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                         <details class="transfer-details">
+                            <summary>Additional information</summary>
+                            <div class="transfer-details-content">
+                                <ul>
+                                    <li>Item</li>
+                                    <li>Item</li>
+                                    <li>Item</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="panel" id="pr5">
+                        <p class="step mono">Result</p>
+                        <p class="result">Advanced EMT (AEMT) Required</p>
+                        <p class="note">Simple IV fluids without medications (D5W, NS, LR).</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#q5">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="pr6">
+                        <p class="step mono">Result</p>
+                        <p class="result">EMT Basic Required</p>
+                        <p class="note">Secured saline lock only.</p>
+                        <div class="actions">
+                            <a class="transfer-btn" href="#q6">Back</a>
+                            <a class="transfer-btn" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                    <div class="panel" id="pr7">
+                        <p class="step">Result</p>
+                        <p class="result">Confirm Transport Requirements</p>
+                        <p class="note">
+                            No level-of-care recommendation was provided for this pathway in the supplied decision tool.
+                            Contact dispatch or the appropriate clinical authority to confirm the transport level.
+                        </p>
+                        <div class="actions">
+                            <a class="transfer-btn secondary" href="#q6">Back</a>
+                            <a class="transfer-btn secondary" href="#q1">Start Over</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="wrap footer-inner">
+                <span>© Superior Ambulance Service, Inc.</span>
+                <span>46 Exchange Street · Binghamton, NY 13901</span>
+                <span>For medical emergencies, call 911.</span>
+            </div>
+        </footer>
+    </body>
+</html>
